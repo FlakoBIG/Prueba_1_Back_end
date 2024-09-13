@@ -1,5 +1,5 @@
 """
-URL configuration for Prueba1 project.
+URL configuration for eva1 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from juegos.views import inicio,red,gta,bully
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', inicio),
+    path('red', red),
+    path('gta', gta),
+    path('bully', bully),
 ]

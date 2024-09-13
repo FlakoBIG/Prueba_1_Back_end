@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="{%static 'stile/stile.css'%}">
+</head>
+<body>
+    <h1>Bienvenidos a mi pagina</h1>
+    <img src="{%static 'img/'%}{{foto1}}" onclick="location.href='http://127.0.0.1:8000/gta'" class="img">
+    <img src="{%static 'img/'%}{{foto2}}"onclick="location.href='http://127.0.0.1:8000/red'" class="img">
+    <img src="{%static 'img/'%}{{foto3}}"onclick="location.href='http://127.0.0.1:8000/bully'" class="img">
+</body>
+</html>
